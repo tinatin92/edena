@@ -229,6 +229,42 @@
         </div>
     </section>
 
+    <section class="container navbar">
+        <h3 class="h3">Product Categories</h3>
+        <div class="navigation">
+            <div class="navArea">
+                <ul>
+                    <li>
+
+                        <a href="#"
+                            onmouseenter="changeImage('assets/images/337670179_450837493894440_3681745197021950728_n.jpg')">Spices</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            onmouseenter="changeImage('assets/images/339791437_586828163181809_5333231564726277075_n.jpg')">Pickles</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            onmouseenter="changeImage('assets/images/347401006_197913086456554_2486782126149099475_n.jpg')">Jams</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            onmouseenter="changeImage('assets/images/339791437_586828163181809_5333231564726277075_n.jpg')">Sauses</a>
+                    </li>
+                 
+            </div>
+            <div class="imgArea">
+                <img id="slider" src="assets/images/337670179_450837493894440_3681745197021950728_n.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        function changeImage(anything) {
+            document.getElementById('slider').src = anything;
+        }
+    </script>
 
     <section class="container">
         <div class="pre-footer">
