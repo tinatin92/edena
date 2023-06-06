@@ -203,15 +203,11 @@ body {
   font-weight: 500;
   color: #000;
   width: 50%;
-  transform: scale(0);
-  opacity: 0;
+
   transition: transform 2s, opacity 3s;
 }
 
-.header-comment.big-font {
-  transform: scale(1);
-  opacity: 1;
-}
+
 .mainslider {
   position: relative;
 }
@@ -319,14 +315,13 @@ body {
   margin: 0 0 0 250px;
   line-height: 76px;
   width: 70%;
-
+ 
   background: linear-gradient(to bottom, #07562a, #faa61a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: transform 3s, opacity 3s;
 }
-.about-us_title.big-font {
-  font-size: 100px;
-}
+
 .about-us_title img {
   position: absolute;
 }
@@ -472,8 +467,33 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 0 0 34px 0;
   transition: 0.3s;
+}
+.product2 a {
+  text-decoration: none;
+  color: #484848;
+}
+.product-img2 span:first-of-type {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 52px;
+  margin: 10px 0 0 0;
+}
+.icon-_1 {
+  font-size: 31px;
+  margin: 3px 0 0 0;
+  transition: 0.3s;
+}
+.product2:hover .icon-_1 {
+  transform: translateX(10px);
+}
+.product-img2-img {
+  transition: 0.3s;
+}
+.product2:hover .product-img2 .product-img2-img {
+  transform: rotate(-10deg);
 }
 .product:nth-child(even) {
   transform: translate(0, 35px);
@@ -490,6 +510,20 @@ body {
   justify-content: center;
   overflow: hidden;
   margin: 0 0 20px 0;
+}
+.product2 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-img2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .product-img img {
   max-width: 100%;
@@ -586,7 +620,23 @@ body {
   list-style: none;
 }
 .navArea ul li a {
-  display: block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.hoverImage {
+  margin: 0 0 0 12px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.navArea ul li:hover a {
+  color: #faa61a;
+}
+.navArea ul li:hover .hoverImage {
+  opacity: 1;
+}
+.navArea ul li a {
+  display: inline-block;
   font-size: 42px;
   font-weight: 500;
   color: #07562a;

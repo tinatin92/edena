@@ -11,13 +11,4 @@ $(document).ready(function () {
 
 
 });
-const sectionOne = document.querySelector('.header-comment');
-const sectiontwo = document.querySelector('.about-us_title');
-const options = {};
 
-const observer = new IntersectionObserver(function(entries,observer){
-  entries.forEach(entry => entry.target.classList.toggle('big-font'))
-})
-
-observer.observe(sectionOne)
-observer.observe(sectiontwo)
