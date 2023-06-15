@@ -73,8 +73,15 @@ $(document).ready(function () {
   'resizeDuration': 60,
 
 })
-
-
+$(".burger-img").click(function () {
+  $(this).parent().toggleClass("burgeropen"),
+    $(this).parent().toggleClass("rotate");
+});
+$('.burger-icon').click(function (e) { 
+  $('.burger-menu').toggleClass('open'),
+  $(this).toggleClass('open')
+  
+});
   
 });
 
