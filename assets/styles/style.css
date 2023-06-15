@@ -7,6 +7,9 @@ body {
   box-sizing: border-box;
   font-size: 22px;
 }
+body:lang(ka){
+  font-family: 'BPG Nino';
+}
 * {
   margin: 0;
   padding: 0;
@@ -167,11 +170,11 @@ header.header-shadow .header{
   margin: 0 50px 0 0;
   transition: 0.3s;
 }
-/* .header-menu:lang(ka) a{
+.header-menu:lang(ka) a{
   font-size: 20px;
   font-weight: 700;
   font-family: 'BPG Nino Mtavruli';
-} */
+}
 .header-menu .nav .menu-ul li:hover a:not(.sub-menu a) {
   color: #faa61a;
 }
@@ -269,20 +272,22 @@ header.header-shadow .header{
   font-size: 18px;
   color: #000;
 }
+
 .search input {
+  
   border: none;
   outline: none;
   width: 100px;
-  padding: 10px 10px 0 10px;
-  /*   background-color: pink; */
+  padding: 0px 10px 0px 10px;
+  transition: .3s;
   font-size: 22px;
 }
 .search input::placeholder {
   font-size: 20px;
   font-weight: 700;
   font-family: "BPG Nino Mtavruli";
-  /* font-size: 22px;
-  font-weight: 500; */
+  font-size: 22px;
+  font-weight: 500;
   color: #000;
   transition: 0.3s;
 }
@@ -292,7 +297,11 @@ header.header-shadow .header{
   font-family: "BPG Nino Mtavruli";
 }
 .search input:focus {
+  width: 225px;
   outline: none;
+}
+.search input:focus .search{
+  width: 300px;
 }
 .search button {
   border: none;
@@ -344,7 +353,7 @@ header.header-shadow .header{
   color: #faa61a;
 }
 .header-comment {
-  margin: 80px 0 90px 250px;
+  margin: 160px 0 90px 250px;
   padding: 0 150px 0 0;
   display: block;
   /*  font-size: 44px;
@@ -483,6 +492,11 @@ header.header-shadow .header{
 .about-us_main .about-us_title {
   padding: 40px 342px 40px 0;
 }
+.about-us_main .about-us_title:lang(ka){
+  font-family: 'BPG Nino Mtavruli';
+  font-size: 38px;
+  font-weight: bold;
+}
 .about-us_title:lang(ka) {
   font-size: 44px;
   font-weight: 700;
@@ -490,7 +504,7 @@ header.header-shadow .header{
   padding: 36px 350px 40px 0;
 }
 .about-us_main {
-  margin: 50px 0 0 0;
+  margin: 50px 0 100px 0;
 }
 .about-us_main .about-us_title img:first-of-type {
   top: 10px;
@@ -566,7 +580,7 @@ header.header-shadow .header{
 }
 .counter-div span:last-of-type {
   font-size: 28px;
-  font-family: "BPG Nino Mtavruli";
+
 }
 .counter-div:nth-child(1) {
   border-image: linear-gradient(45deg, #faa61a, #07562a) 1;
@@ -734,7 +748,6 @@ header.header-shadow .header{
   font-size: 22px;
   font-weight: 700;
   font-weight: 700;
-  font-family: "BPG Nino Mtavruli";
   color: #07562a;
   text-align: center;
   margin: 0 0 8px 0;
@@ -745,10 +758,10 @@ header.header-shadow .header{
 }
 .product-desc {
   display: block;
-  /*  font-size: 24px;
-  font-weight: 500; */
+   font-size: 24px;
+  font-weight: 500;
   font-size: 22px;
-  font-family: "BPG Nino";
+
   color: #000;
   text-align: center;
 }
@@ -767,9 +780,9 @@ header.header-shadow .header{
 }
 .pre-footer_div1 {
   width: 30%;
-  /* font-size: 54px;
+  font-size: 54px;
   font-weight: 600;
-  line-height: 76px;  */
+  line-height: 76px; 
   font-size: 40px;
   font-weight: 700;
   line-height: 55px;
@@ -918,6 +931,11 @@ header.header-shadow .header{
   font-weight: 500;
   margin: 0 0 10px 0;
 }
+.breadcrumbs-section h3:lang(ka){
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'BPG Nino Mtavruli';
+}
 .breadcrumbs ul {
   display: flex;
   align-items: center;
@@ -940,6 +958,11 @@ header.header-shadow .header{
   color: #fff;
   font-size: 18px;
 }
+.breadcrumbs a:lang(ka){
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'BPG Nino Mtavruli';
+}
 .about-us_main .share {
   width: 70%;
   margin: 30px 0 0 250px;
@@ -959,6 +982,11 @@ header.header-shadow .header{
   font-weight: 500;
   color: #07562a;
   margin: 0 12px 0 0;
+}
+.share h3:lang(ka){
+  font-family: 'BPG Nino Mtavruli';
+  font-size: 22px;
+  font-weight: 400;
 }
 /*pagination*/
 .pagination {
@@ -1002,12 +1030,15 @@ header.header-shadow .header{
   margin: 50px 0 20px 0;
 }
 .product-categories {
-  margin: 90px 0 0 0;
+  margin: 70px 0 0 0;
 }
 .product-categories-search h3 {
   color: #07562a;
   font-size: 30px;
   font-weight: 700;
+}
+.product-categories-search h3:lang(ka){
+  font-family: 'BPG Nino Mtavruli';
 }
 .product-categories-search {
   display: flex;
@@ -1047,6 +1078,9 @@ header.header-shadow .header{
   color: #737373;
   font-size: 22px;
   font-weight: 700;
+}
+.product-list_search ul li a:lang(ka){
+  font-family: 'BPG Nino Mtavruli';
 }
 .product-list_search img {
   width: 36px;
@@ -1115,11 +1149,22 @@ header.header-shadow .header{
   color: #000;
   line-height: 38px;
   margin: 0 0 16px 0;
+  height: 75px;
+  overflow: hidden;
+
+}
+.news-titel:lang(ka){
+  font-family: 'BPG Nino Mtavruli';
 }
 .news-text {
   font-size: 24px;
   color: #000;
   line-height: 40px;
+  height: 75px;
+  overflow: hidden;
+}
+.news-text:lang(ka){
+  height: 120px;
 }
 .product-detail {
   display: flex;
@@ -1186,11 +1231,18 @@ header.header-shadow .header{
   color: #000;
   margin: 0 0 26px 0;
 }
+.product-detail_content-h3:lang(ka){
+  font-family: 'BPG Nino Mtavruli';
+
+}
 .product-detail_content-title {
   font-size: 24px;
   font-weight: 700;
   color: #07562a;
   margin: 0 34px 0 0;
+}
+.product-detail_content-title:lang(ka){
+  font-family: 'BPG Nino Mtavruli';
 }
 .product-detail_content .icon-Vector-7 {
   font-size: 30px;
@@ -1337,6 +1389,9 @@ header.header-shadow .header{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.news-detail-title-text:lang(ka){
+  font-family: 'BPG Nino Mtavruli';
+}
 .news-floating-img{
   position: absolute;
   top: 0;
@@ -1398,6 +1453,9 @@ header.header-shadow .header{
   font-weight: 500;
   color: #FAA61A;
 }
+.search-section-search input::placeholder:lang(ka){
+  font-family: 'BPG Nino Mtavruli';
+}
 .search-section-search button{
   border: 0;
   outline: none;
@@ -1439,11 +1497,21 @@ header.header-shadow .header{
   color: #000;
   line-height: 44px;
   margin:30px 100px 15px 0 ;
+  height: 45px;
+  overflow: hidden;
+}
+.search-div-title:lang(ka){
+  font-family: 'BPG Nino Mtavruli';
 }
 .search-div-text{
   font-size: 24px;
   line-height: 40px;
   margin: 0 0 68px 0;
+ height: 45px;
+ overflow: hidden;
+}
+.search-div-text:lang(ka){
+  height: 75px;
 }
 .search-div-spans{
   display: flex;
@@ -1452,6 +1520,11 @@ header.header-shadow .header{
 }
 .search-div-span1{
   color: #07562A;
+  font-weight: 700;
+}
+.search-div-span1:lang(ka){
+  font-size: 20px;
+  font-family: 'BPG Nino Mtavruli';
 }
 .search-div:hover .search-div-span2{
   transform: translateX(15px);
@@ -1488,6 +1561,9 @@ font-size: 22px;
   font-weight: 700;
   color: #07562A;
   margin: 0 0 60px 0;
+}
+.contact-form-title div:lang(ka){
+  font-family: 'BPG Nino Mtavruli';
 }
 .contact-form img{
   position: absolute;
@@ -1534,6 +1610,12 @@ font-size: 22px;
   margin: 40px 0 0 ;
   cursor: pointer;
 }
+.contact-form-from form button:lang(ka){
+  font-size: 18px;
+  font-weight:700;
+  font-family: 'BPG Nino Mtavruli';
+
+}
 .contact-form-from form button:hover{
   border: 1px solid #FAA61A;
   background-color: #fff;
@@ -1578,6 +1660,9 @@ font-size: 22px;
   color: #07562A;
   margin: 0 0 20px 0;
 }
+.contact-greentitle:lang(ka){
+  font-family: 'BPG Nino Mtavruli';
+}
 .con-margin{
   margin: 30px 0 20px 0;
 }
@@ -1586,7 +1671,7 @@ font-size: 22px;
   color: #000;
 }
 .foot-font2{
-  font-weight: 500;
+  
   line-height:44px ;
 }
 /* width */
@@ -1604,4 +1689,7 @@ font-size: 22px;
   background: #07562A;
   border-radius: 25px;
 }
+
+
+
 
