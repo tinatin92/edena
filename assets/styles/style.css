@@ -356,12 +356,11 @@ header.header-shadow .header{
   margin: 160px 0 90px 250px;
   padding: 0 150px 0 0;
   display: block;
-  /*  font-size: 44px;
-  font-weight: 500; */
+   font-size: 44px;
+  font-weight: 500;
   font-weight: 700;
   line-height: 60px;
-  font-family: "BPG Nino Mtavruli";
-  color: #000;
+ 
   width: 50%;
 }
 .header-comment:lang(ka) {
@@ -479,23 +478,21 @@ header.header-shadow .header{
   position: relative;
   font-size: 60px;
   font-weight: 600;
-  padding: 40px 500px 48px 0;
+  padding: 40px 370px 48px 0;
   margin: 0 0 0 250px;
   line-height: 76px;
   width: 70%;
-  /*  font-family: 'BPG Nino Mtavruli'; */
   background: linear-gradient(to bottom, #07562a, #faa61a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: transform 3s, opacity 3s;
 }
-.about-us_main .about-us_title {
-  padding: 40px 342px 40px 0;
-}
+
 .about-us_main .about-us_title:lang(ka){
   font-family: 'BPG Nino Mtavruli';
   font-size: 38px;
   font-weight: bold;
+  padding: 40px 270px 40px 0;
 }
 .about-us_title:lang(ka) {
   font-size: 44px;
@@ -1772,6 +1769,7 @@ margin:38px 0 0 0 ;
  right: 30px;
   cursor: pointer;
   z-index: 10000;
+  display: none;
 }
 .burger-icon span{
   display: block;
