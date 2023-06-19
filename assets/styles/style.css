@@ -935,6 +935,7 @@ header.header-shadow .header{
 }
 .breadcrumbs ul {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .breadcrumbs ul li {
@@ -1064,6 +1065,7 @@ header.header-shadow .header{
 }
 .product-list_search ul {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .product-list_search ul li {
@@ -1690,15 +1692,15 @@ font-size: 22px;
 .burger-menu{
   position: fixed;
   width: 450px;
-  top: 100px;
-  right: 100px;
+  top: 91px;
+  right: -1000px;
   padding: 40px 65px 100px 65px;
   background-color:#fff;
- border: 3px solid #000;
- display: none;
+ border: 1px solid #E2E2E2;
+ 
 }
 .burger-menu.open{
-  display: block;
+  right: 0;
 }
 .burger-menu .language a{
   font-size: 18px;
